@@ -1,1 +1,1 @@
-# school-projects
+# odd-one-out
