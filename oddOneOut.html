@@ -1,0 +1,74 @@
+<html><head>
+	<title>Find the Flower Game</title>
+  	<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/346/346167.png"> 
+  	
+  	<style>
+ 		p, h1{
+  			display: inline;
+  			text-align: center;
+  			font-family: Georgia, Serif;
+  		}
+    	button {
+      		color: lightGray;
+      		background-color: dodgerBlue;
+      		border-color: dodgerBlue;
+      		position: absolute;
+      		padding: 60px 60px;
+      		font-size: 30px;
+      		border-radius: 100%;
+      		font-family: Georgia, Serif;
+    	}
+    	body {
+       		background-image: url('https://i1.wp.com/artofakind.com/wp-content/uploads/2019/11/monet-waterlilies-detail-jessyca-frederick.jpg?fit=2400%2C1800&ssl=1'); 
+    	}
+	    button:hover {
+    		color: Black;
+      		background-color: mistyRose;
+    	}
+	</style><script>
+    	var score = 0;
+    
+		function randomizeButtonPositions() {
+    		document.getElementById("p1").style.color = 'white';
+    		document.getElementById("p1").style.fontSize = "150%";
+    		document.getElementById("h1").style.color = 'white';
+    		document.getElementById("h1").style.fontSize = "400%"
+    		document.getElementById("p1").innerHTML = "Score: " + score;
+    		var buttons = document.querySelectorAll("button");
+    		buttons.forEach( (b) => {
+       			b.style.left = (Math.random()*80+10)+"%";
+       			b.style.top = (Math.random()*80+10)+"%";
+     		} );
+    	}
+    	
+    	function handleFlowerClick(){
+    		score++;
+      		randomizeButtonPositions();
+    	}
+    	
+    	function handleDesertClick(){
+    		score--;
+      		randomizeButtonPositions();
+    	}
+	</script>
+  	<meta name="Julia Oghigian" content="oghigian">
+  	<meta name = "description" content="Finding the flower game">
+  	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+</head>
+	<body onload="randomizeButtonPositions()">
+    	<p id="p1">Score: 0</p>
+    	<h1 id="h1"><center>Find the Flower</center></h1>
+    	<button onclick="handleFlowerClick()">Flower</button>
+    	<button onclick="handleFlowerClick()">Flour</button>
+   		<button onclick="handleFlowerClick()">Flour</button>
+    	<button onclick="handleFlowerClick()">Flour</button>
+    	<button onclick="handleFlowerClick()">Flour</button>
+    	<button onclick="handleFlowerClick()">Flour</button>
+    	<button onclick="handleFlowerClick()">Flour</button>
+    	<button onclick="handleFlowerClick()">Flour</button>
+    	<button onclick="handleFlowerClick()">Flour</button>
+    	<button onclick="handleFlowerClick()">Flour</button>
+    
+	</body>
+</html>
+<!-- I personally do not own any of the images used for for the background and the shortcut icon. The shortcut icon comes from https://www.flaticon.com and the background image comes from Monet's Water Lilies from ArtofaKind.com. These images are for personal use only and belong to their respective owners. -->
