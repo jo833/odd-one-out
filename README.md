@@ -9,8 +9,6 @@
 </table>
 
 
-## Demo
-Here is a working live demo :  file:///C:/Users/Jrojr/eclipse-workspace/Website%20Find%20The%20Word%20Game/oddOneOut.html
 
 ## Note
 I do not own any of the images used in this program. They have been credited in the html file to their respective owners.
